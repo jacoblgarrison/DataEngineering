@@ -24,11 +24,6 @@
   (CSV files ingested into PostgreSQL).
 </p>
 
-  <p><strong>Data Source:</strong><br>
-  Public transactional dataset representing customer purchases
-  (CSV files ingested into PostgreSQL).
-</p>
-
   <p><strong>Problem:</strong><br>
     Raw business data was difficult to analyze due to inconsistent schemas
     and lack of analytics-ready tables.
@@ -56,6 +51,19 @@
     <li>Python (Pandas)</li>
     <li>Git / GitHub</li>
   </ul>
+
+  <p><strong>Key Engineering Decisions:</strong></p>
+<ul>
+  <li>Used SQL-first transformations for transparency and maintainability</li>
+  <li>Modeled data using a star schema to optimize analytical queries</li>
+  <li>Separated raw, staging, and analytics layers to reduce coupling</li>
+  <li>Designed tables to support incremental data loads</li>
+</ul>
+
+  <p>
+  <strong>Code:</strong>
+  <a href="#">GitHub Repository (coming soon)</a>
+</p>
 
   <p>
     <em>This project will be expanded with architecture diagrams,
